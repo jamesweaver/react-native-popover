@@ -343,7 +343,7 @@ var Popover = React.createClass({
     arrowStyle = [...arrowStyle, {transform: arrowTransform}];
 
     return (
-      <TouchableWithoutFeedback onPress={this.props.onClose}>
+      <TouchableWithoutFeedback accessible={false} onPress={this.props.onClose}>
         <View style={[styles.container, contentSizeAvailable && styles.containerVisible ]}>
           <Animated.View style={[styles.background, ...extendedStyles.background]}/>
           <Animated.View style={[styles.popover, {
