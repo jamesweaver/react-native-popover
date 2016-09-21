@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react-native');
+var ReactNative = require('react-native');
+var React = require('react')
 var {
-  PropTypes,
   StyleSheet,
   Dimensions,
   Animated,
@@ -10,6 +10,9 @@ var {
   TouchableWithoutFeedback,
   View,
   Easing
+} = ReactNative;
+var {
+  PropTypes
 } = React;
 var noop = () => {};
 
